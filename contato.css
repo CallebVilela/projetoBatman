@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 90%;
+
+}
+ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 90px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+#contato-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    column-gap: 60px;
+    row-gap: 5px;
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-image: url("https://uploads.alternativanerd.com.br/wp-content/uploads/2022/02/obatman3.jpg");
+}
+
+
+.content {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: solid;
+    border-color: aliceblue;
+    border-radius: 5%;
+    transition: 1s;
+}
+
+.content:hover {
+    transform: scale(1.05);
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+    background-color: transparent;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+label {
+    color: #fff;
+    margin-left: 15px;
+    margin-bottom: 4px;
+    display: block;
+    background-color: transparent;
+    width: 18px;
+    height:18px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+input {
+    margin-left: 10px;
+    margin-top: 3px;
+    padding: 2px;
+    color: black;
+    display: block;
+    height: 15px;
+    width: 150px;
+    border: solid;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+
+
+#texto {
+    color: black;
+    margin: 10px 10px 10px 10px;
+    width: 250px;
+    height: 120px;
+    border: solid;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+button {
+    background-color: whitesmoke;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: black;
+    margin: 15px 10px 10px 40%;
+    height: 25px;
+    width: 60px;
+    border: none;
+    border-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.8s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+}
+
+button:hover {
+    background-color: red;
+    color: #fff;
+
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+    width: 100px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    flex-direction: center;
+}
+
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+
+    #logo {
+        width: 90px;
+        height: auto;
+        display: flex;
+        align-items: center; 
+    }
+    #contato {
+        display: none;
+    }
+    #fotos {
+        display: none;
+    }
+    #comentarios {
+        display: none;
+    }
+
+    #banner {
+        background-position: 19%;
+    }
+    }

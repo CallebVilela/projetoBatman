@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 90%;
+
+}
+ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 90px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+#fotos-container {
+    width: 100%;
+    height: 950px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/142/919/603/batman-the-batman-2022-dark-dc-comics-black-background-hd-wallpaper-preview.jpg");
+    background-size: cover;
+}
+
+.fotos-content {
+    width: 80%;
+    height: 80%;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+    row-gap: 80px;
+}
+
+.foto {
+    height: 350px;
+    width: 300px;
+    border: none;
+    border-radius: 15%;
+    transition: 1s;
+    cursor: pointer;
+    background-size: cover;
+}
+
+.foto:hover {
+    transform: scale(1.1);
+}
+
+.banner-1 {
+    background-image: url("https://t.ctcdn.com.br/FApW51TgWtPYmXiaH0snNArikCg=/322x477/smart/filters:format(webp)/i556564.jpeg");
+}
+
+.banner-2 {
+    background-image: url("https://br.web.img3.acsta.net/pictures/22/03/02/19/26/3666027.jpg");
+}
+
+.banner-3 {
+    background-image: url("https://img.elo7.com.br/product/original/3FBBED5/big-poster-filme-batman-2022-90x60-cm-lo004-presente-geek.jpg");
+}
+
+.banner-4 {
+    background-image: url("https://c8.alamy.com/comp/2HN7X78/poster-the-batman-2022-photo-credit-warner-bros-pictures-tha-2HN7X78.jpg");
+}
+
+.banner-5 {
+    background-image: url("https://blogger.googleusercontent.com/img/a/AVvXsEi_poIrEMiXOy7BFpS61is2y5UZyk_GoFq14uvVVTmrFF1LIZrI4AoOEr2lknD_K57mGp5xIWmHSOlIMeXJZG_DWz7dRsZdz_2KizXuEUbfpnde8ZcRiK3331ww5UPhDjtYOTwxYMVASHV5xsQUQMZUJQnrXAndw4edXwzumnBTdE4Q4Lu4wMSrSEGV=w400-h400");
+}
+
+.banner-6 {
+    background-image: url("https://img.olhardigital.com.br/wp-content/uploads/2022/02/Charada-em-The-Batman.jpg");
+}
+
+.banner-7 {
+    background-image: url("https://64.media.tumblr.com/73100b7fad1f2ca7857f2d17f31cc84a/23ed3e8a80eb1004-7d/s400x600/060b462320143c12b414f23e274d7d46c58eaa33.gifv");
+    background-size: 100% 100%;
+}
+
+.banner-8 {
+    background-image: url("https://blogger.googleusercontent.com/img/a/AVvXsEi_poIrEMiXOy7BFpS61is2y5UZyk_GoFq14uvVVTmrFF1LIZrI4AoOEr2lknD_K57mGp5xIWmHSOlIMeXJZG_DWz7dRsZdz_2KizXuEUbfpnde8ZcRiK3331ww5UPhDjtYOTwxYMVASHV5xsQUQMZUJQnrXAndw4edXwzumnBTdE4Q4Lu4wMSrSEGV=w400-h400");
+}
+
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+    width: 100px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    flex-direction: center;
+}
+
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+        margin-top: 30px;
+    }
+
+    #logo {
+        width: 90px;
+        height: auto;
+        display: flex;
+        align-items: center; 
+    }
+    #contato {
+        display: none;
+    }
+    #fotos {
+        display: none;
+    }
+    #comentarios {
+        display: none;
+    }
+
+    #fotos-container {
+        height: 1600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fotos-content {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        align-items: center;
+        justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    
+}
